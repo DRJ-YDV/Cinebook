@@ -1,0 +1,86 @@
+{
+  "width": 390,
+  "scroll": 561,
+  "overflowing": [
+    {
+      "tag": "DIV",
+      "classes": "recharts-tooltip-wrapper recharts-tooltip-wrapper-left recharts-tooltip-wrapper-bottom",
+      "right": 561
+    },
+    {
+      "tag": "DIV",
+      "classes": "recharts-default-tooltip",
+      "right": 561
+    },
+    {
+      "tag": "P",
+      "classes": "recharts-tooltip-label",
+      "right": 550
+    },
+    {
+      "tag": "TABLE",
+      "classes": "w-full min-w-[840px] text-left text-sm",
+      "right": 857
+    },
+    {
+      "tag": "THEAD",
+      "classes": "border-y border-border bg-surface-2/50 text-xs text-muted-foreground",
+      "right": 857
+    },
+    {
+      "tag": "TR",
+      "classes": "",
+      "right": 857
+    },
+    {
+      "tag": "TH",
+      "classes": "px-5 py-3 font-medium",
+      "right": 501
+    },
+    {
+      "tag": "TH",
+      "classes": "px-5 py-3 font-medium",
+      "right": 613
+    },
+    {
+      "tag": "TH",
+      "classes": "px-5 py-3 font-medium",
+      "right": 697
+    },
+    {
+      "tag": "TH",
+      "classes": "px-5 py-3 font-medium",
+      "right": 857
+    },
+    {
+      "tag": "TBODY",
+      "classes": "divide-y divide-border",
+      "right": 857
+    },
+    {
+      "tag": "TR",
+      "classes": "transition hover:bg-surface-2/30",
+      "right": 857
+    },
+    {
+      "tag": "TD",
+      "classes": "max-w-64 px-5 py-4",
+      "right": 501
+    },
+    {
+      "tag": "P",
+      "classes": "truncate font-medium",
+      "right": 481
+    },
+    {
+      "tag": "P",
+      "classes": "mt-1 truncate text-xs text-muted-foreground",
+      "right": 481
+    },
+    {
+      "tag": "TD",
+      "classes": "px-5 py-4",
+      "right": 613
+    }
+  ]
+}

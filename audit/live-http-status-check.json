@@ -1,0 +1,26 @@
+[
+  {
+    "name": "getCurrentUser",
+    "status": 200,
+    "authRequired": false,
+    "csrfRejected": false
+  },
+  {
+    "name": "getFavorites",
+    "status": 401,
+    "authRequired": true,
+    "csrfRejected": false
+  },
+  {
+    "name": "getUserBookings",
+    "status": 401,
+    "authRequired": true,
+    "csrfRejected": false
+  },
+  {
+    "name": "getAdminOverview",
+    "status": 401,
+    "authRequired": true,
+    "csrfRejected": false
+  }
+]

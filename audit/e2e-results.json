@@ -1,0 +1,579 @@
+{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\dheer\\Desktop\\CineBook\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "--config",
+      "playwright.config.cjs"
+    ],
+    "configFile": "C:\\Users\\dheer\\Desktop\\CineBook\\playwright.config.cjs",
+    "rootDir": "C:/Users/dheer/Desktop/CineBook/tests/e2e",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/dheer/Desktop/CineBook/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/dheer/Desktop/CineBook/tests/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.spec.cjs"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "filteredProjects": [
+      {
+        "grep": {},
+        "grepInvert": null,
+        "outputDir": "C:\\Users\\dheer\\Desktop\\CineBook\\test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "name": "",
+        "testDir": "C:\\Users\\dheer\\Desktop\\CineBook\\tests\\e2e",
+        "snapshotDir": "C:\\Users\\dheer\\Desktop\\CineBook\\tests\\e2e",
+        "testIgnore": [],
+        "testMatch": "**/*.spec.cjs",
+        "timeout": 120000,
+        "use": {
+          "baseURL": "http://127.0.0.1:4180",
+          "channel": "msedge",
+          "headless": true,
+          "viewport": {
+            "width": 1280,
+            "height": 800
+          },
+          "screenshot": "only-on-failure",
+          "trace": "retain-on-failure"
+        },
+        "dependencies": [],
+        "ignoreSnapshots": false,
+        "__projectId": ""
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "audit/e2e-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "default",
+    "updateSourceMethod": "patch",
+    "version": "1.64.1",
+    "workers": 1,
+    "webServer": {
+      "command": "npm run dev -- --host 127.0.0.1 --port 4180 --strictPort",
+      "url": "http://127.0.0.1:4180",
+      "timeout": 120000,
+      "reuseExistingServer": false,
+      "env": {
+        "MONGODB_URI": "",
+        "MONGODB_DB": "cinebook_audit_disabled",
+        "SESSION_SECRET": "isolated-browser-session-secret-only-used-in-tests-64-characters",
+        "CINEBOOK_ADMIN_EMAIL": "audit-admin@example.test",
+        "TMDB_ACCESS_TOKEN": "",
+        "TMDB_API_KEY": "",
+        "TMDB_CACHE_FILE": "",
+        "RAZORPAY_KEY_ID": "",
+        "RAZORPAY_KEY_SECRET": ""
+      }
+    }
+  },
+  "suites": [
+    {
+      "title": "admin-dashboard.spec.cjs",
+      "file": "admin-dashboard.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "mocked RPC / actual admin UI: administrator sign-in opens business analytics, customer seats, search and refresh on desktop/mobile",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 22038,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T13:26:45.543Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "57c3dbc2fdb20d11363c-a61766049075aa9003c5",
+          "file": "admin-dashboard.spec.cjs",
+          "line": 127,
+          "column": 1
+        },
+        {
+          "title": "mocked RPC / actual navigation: ordinary sign-in stays in the movie app and cannot see admin analytics",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 68446,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T13:27:27.001Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "57c3dbc2fdb20d11363c-4a4b888f17a43fdc23fe",
+          "file": "admin-dashboard.spec.cjs",
+          "line": 236,
+          "column": 1
+        },
+        {
+          "title": "mocked RPC / actual admin UI: unavailable analytics show an error and retry instead of false zero totals",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16312,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T13:28:35.526Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "57c3dbc2fdb20d11363c-ed859847e2342efbbbd1",
+          "file": "admin-dashboard.spec.cjs",
+          "line": 254,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "isolated-database.spec.cjs",
+      "file": "isolated-database.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "isolated real DB and two browser contexts: favorites/bookings survive reload only for their owner; logout revokes replay",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [
+                {
+                  "type": "skip",
+                  "description": "Isolated MONGODB_TEST_URI and MONGODB_TEST_DB were not supplied; the live database is never used by these tests.",
+                  "location": {
+                    "file": "C:\\Users\\dheer\\Desktop\\CineBook\\tests\\e2e\\isolated-database.spec.cjs",
+                    "line": 79,
+                    "column": 8
+                  }
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "skipped",
+                  "duration": 5,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T13:28:52.118Z",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Isolated MONGODB_TEST_URI and MONGODB_TEST_DB were not supplied; the live database is never used by these tests.",
+                      "location": {
+                        "file": "C:\\Users\\dheer\\Desktop\\CineBook\\tests\\e2e\\isolated-database.spec.cjs",
+                        "line": 79,
+                        "column": 8
+                      }
+                    }
+                  ],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "d9f52b5501fcc96ca3a7-59d4dc534bcf43d8a7c1",
+          "file": "isolated-database.spec.cjs",
+          "line": 76,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "public-browser.spec.cjs",
+      "file": "public-browser.spec.cjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "real browser: unavailable live search reports failure instead of returning sample matches",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14222,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T13:28:52.406Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "826108cab5d64d7f5b12-dd5e91f52eede96faabb",
+          "file": "public-browser.spec.cjs",
+          "line": 30,
+          "column": 1
+        },
+        {
+          "title": "real browser HTTP: every protected server function denies anonymous calls",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3825,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T13:29:11.811Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "826108cab5d64d7f5b12-7b1e68fa01ad30f955d1",
+          "file": "public-browser.spec.cjs",
+          "line": 58,
+          "column": 1
+        },
+        {
+          "title": "real browser: offline catalogue is labeled and a movie card opens its detail page",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11627,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T13:29:15.711Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "826108cab5d64d7f5b12-0e359efd4eacc7bcced5",
+          "file": "public-browser.spec.cjs",
+          "line": 87,
+          "column": 1
+        },
+        {
+          "title": "mocked TMDB RPC / actual UI: movie cards render while the active hero trailer is still loading",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24000,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T13:29:27.495Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "826108cab5d64d7f5b12-499c2659ccddc6b2c5d1",
+          "file": "public-browser.spec.cjs",
+          "line": 103,
+          "column": 1
+        },
+        {
+          "title": "real browser: guest is denied admin dashboard and sees no private analytics",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 12884,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T13:29:51.609Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "826108cab5d64d7f5b12-0a4898e2c564292fb4e0",
+          "file": "public-browser.spec.cjs",
+          "line": 181,
+          "column": 1
+        },
+        {
+          "title": "real browser: legacy local-storage admin, favorites and bookings cannot authenticate a guest",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21692,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T13:30:04.651Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "826108cab5d64d7f5b12-ab49288ea423d65a937c",
+          "file": "public-browser.spec.cjs",
+          "line": 190,
+          "column": 1
+        },
+        {
+          "title": "real browser: guest favorite action requests sign-in and never persists a favorite",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8973,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T13:30:26.386Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "826108cab5d64d7f5b12-503bcd4ffcc1333d1bdf",
+          "file": "public-browser.spec.cjs",
+          "line": 218,
+          "column": 1
+        },
+        {
+          "title": "real browser and HTTP: sign-out endpoint is idempotent for a guest and profile remains private",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 120000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 8068,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-27T13:30:35.506Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "826108cab5d64d7f5b12-705ecea76a2cd07f3e2c",
+          "file": "public-browser.spec.cjs",
+          "line": 230,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-27T13:26:31.860Z",
+    "duration": 253769.248,
+    "expected": 11,
+    "skipped": 1,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

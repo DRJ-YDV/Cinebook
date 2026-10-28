@@ -1,0 +1,7 @@
+{
+  "publicAssetsScanned": 34,
+  "secretValuesChecked": 6,
+  "exposedSecretCount": 0,
+  "findings": [],
+  "adminTestFixturesBundled": false
+}

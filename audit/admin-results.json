@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-26",
+  "unit": {
+    "passed": 52,
+    "failed": 0,
+    "scope": "actual source, mocked database/session/provider boundaries"
+  },
+  "browser": {
+    "passed": 10,
+    "skipped": 1,
+    "failed": 0,
+    "realGuestChecks": 7,
+    "mockedAdminUiChecks": 3
+  },
+  "targetedAdminUi": {
+    "passed": 3,
+    "failed": 0,
+    "mobileChartVisible": true,
+    "mobileOverflow": false,
+    "scope": "explicit RPC fixtures"
+  },
+  "typecheck": {
+    "exitCode": 0
+  },
+  "lint": {
+    "exitCode": 0,
+    "errors": 0,
+    "warnings": 9
+  },
+  "build": {
+    "exitCode": 0,
+    "preset": "node-server"
+  },
+  "liveMongo": {
+    "status": "PASS",
+    "scope": "read-only actual MongoDB aggregation; not a browser login",
+    "designatedAccountExists": true,
+    "designatedAccountIsAdmin": false,
+    "paidBookings": 2,
+    "paidRevenue": 1517,
+    "customersBooked": 0,
+    "unlinkedPaidBookings": 2,
+    "seatsBooked": 5,
+    "recentRows": 3,
+    "dailyRows": 14
+  },
+  "publicScan": {
+    "publicAssetsScanned": 34,
+    "secretValuesChecked": 6,
+    "exposedSecretCount": 0,
+    "findings": [],
+    "adminTestFixturesBundled": false
+  },
+  "runningApplication": {
+    "httpStatus": 200,
+    "guestHydrated": true,
+    "database": {
+      "configured": true,
+      "reachable": true,
+      "theatres": 12
+    },
+    "guestAdminDenied": true,
+    "browserErrors": []
+  }
+}

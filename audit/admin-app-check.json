@@ -1,0 +1,11 @@
+{
+  "httpStatus": 200,
+  "guestHydrated": true,
+  "database": {
+    "configured": true,
+    "reachable": true,
+    "theatres": 12
+  },
+  "guestAdminDenied": true,
+  "browserErrors": []
+}

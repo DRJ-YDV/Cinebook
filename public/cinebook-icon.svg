@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+  <rect width="36" height="36" rx="12" fill="oklch(0.65 0.21 20)" />
+  <rect x="0.5" y="0.5" width="35" height="35" rx="11.5" fill="none" stroke="#fff" stroke-opacity="0.2" />
+  <svg x="8" y="8" width="20" height="20" viewBox="0 0 24 24">
+    <path fill="oklch(0.99 0.01 60)" d="M4 4h16a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm1 3v2h2V7H5Zm0 4v2h2v-2H5Zm0 4v2h2v-2H5Zm12-8v2h2V7h-2Zm0 4v2h2v-2h-2Zm0 4v2h2v-2h-2ZM9 7v10h6V7H9Z" />
+  </svg>
+</svg>

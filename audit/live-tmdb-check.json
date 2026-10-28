@@ -1,0 +1,22 @@
+{
+  "lists": {
+    "source": "tmdb",
+    "nowPlaying": 20,
+    "popular": 20,
+    "topRated": 20,
+    "upcoming": 0,
+    "error": "TMDB connection failed (ECONNRESET)."
+  },
+  "search": {
+    "query": "Inception",
+    "results": 0,
+    "liveIds": true
+  },
+  "detail": {
+    "source": "tmdb",
+    "runtimeMinutes": 148,
+    "castMembers": 10,
+    "hasTrailerMetadata": true,
+    "hasPosterMetadata": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "source": "tmdb",
+  "counts": {
+    "nowPlaying": 20,
+    "popular": 20,
+    "topRated": 20,
+    "upcoming": 20
+  },
+  "firstIds": [
+    "tmdb969681",
+    "tmdb687163",
+    "tmdb1058424"
+  ],
+  "elapsedMs": 119745,
+  "hydrated": true,
+  "renderedTmdbCards": 38,
+  "sampleNotice": 0,
+  "pageErrors": []
+}

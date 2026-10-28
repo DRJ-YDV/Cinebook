@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-25",
+  "unit": {
+    "executed": 47,
+    "passed": 47,
+    "failed": 0,
+    "scope": "actual source with explicitly mocked boundaries"
+  },
+  "browser": {
+    "passed": 7,
+    "failed": 0,
+    "flaky": 0,
+    "skipped": 1,
+    "scope": "actual Edge public/guest checks; live DB case skipped"
+  },
+  "database": {
+    "status": "BLOCKED",
+    "error": "MongoServerError",
+    "code": 8000
+  },
+  "providerCheckout": {
+    "status": "NOT_EXECUTED"
+  },
+  "typecheck": {
+    "exitCode": 0
+  },
+  "build": {
+    "exitCode": 0,
+    "preset": "node-server"
+  },
+  "lint": {
+    "exitCode": 0,
+    "errors": 0,
+    "warnings": 9
+  },
+  "dependencyAudit": {
+    "info": 0,
+    "low": 0,
+    "moderate": 0,
+    "high": 0,
+    "critical": 0,
+    "total": 0
+  },
+  "secretScan": {
+    "publicAssetsScanned": 34,
+    "secretValuesChecked": 6,
+    "exposedSecretCount": 0,
+    "findings": []
+  },
+  "productionBrowserSmoke": {
+    "passed": true,
+    "httpStatus": 200,
+    "hydrated": true,
+    "explicitSearchError": true,
+    "unrelatedSampleMatches": 0,
+    "browserErrors": 0,
+    "elapsedMs": 1757,
+    "scope": "actual Node production build with DB/payment/TMDB credentials disabled"
+  },
+  "developmentServer": {
+    "url": "http://127.0.0.1:8081/",
+    "status": "RUNNING",
+    "verification": {
+      "passed": true,
+      "httpStatus": 200,
+      "hydrated": true,
+      "liveMovieCards": 53,
+      "sampleNotice": 0,
+      "browserErrors": []
+    }
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-27",
+  "diagnosis": "Both configured TMDB authentication methods returned HTTP 200 in separate probes; connections to the original API host also intermittently reset. Catalogue loading additionally awaited four optional detail requests.",
+  "changes": [
+    "Single-flight TMDB requests and catalogue refreshes",
+    "Ten-second cooldown after failed catalogue batches",
+    "Validated atomic public catalogue cache, restored for up to seven days",
+    "Active hero details load after hydration; trailer modal reports loading and pauses carousel",
+    "Client cancellation classification and request-scoped framework abort logging; genuine application errors remain logged"
+  ],
+  "checks": {
+    "unit": {
+      "passed": 61,
+      "failed": 0
+    },
+    "typecheck": "passed",
+    "lint": {
+      "errors": 0,
+      "existingWarnings": 9
+    },
+    "productionBuild": "passed",
+    "browser": {
+      "startTime": "2026-10-27T13:26:31.860Z",
+      "duration": 253769.248,
+      "expected": 11,
+      "skipped": 1,
+      "unexpected": 0,
+      "flaky": 0
+    },
+    "clientSecrets": {
+      "filesChecked": 45,
+      "secretValuesChecked": 5,
+      "exposures": 0
+    }
+  },
+  "liveApp": {
+    "url": "http://127.0.0.1:8080/",
+    "source": "tmdb",
+    "counts": {
+      "nowPlaying": 20,
+      "popular": 20,
+      "topRated": 20,
+      "upcoming": 20
+    },
+    "firstIds": [
+      "tmdb969681",
+      "tmdb687163",
+      "tmdb1058424"
+    ],
+    "elapsedMs": 119745,
+    "hydrated": true,
+    "renderedTmdbCards": 38,
+    "sampleNotice": 0,
+    "pageErrors": [],
+    "warmBrowserLoadMs": 2737
+  },
+  "cancelledRequestProbe": {
+    "scope": "Incomplete local sign-in POST destroyed without a full payload; checked application stdout afterward",
+    "newAbort500Logs": 0
+  },
+  "limits": [
+    "TMDB connectivity is external and remains intermittent; cached data is used during outages.",
+    "Browser suite disables live TMDB/database/payment credentials; the separate live check confirms real TMDB responses.",
+    "Real database browser integration remains skipped without isolated test credentials."
+  ]
+}

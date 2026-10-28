@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "httpStatus": 200,
+  "hydrated": true,
+  "explicitSearchError": true,
+  "unrelatedSampleMatches": 0,
+  "browserErrors": 0,
+  "elapsedMs": 1757,
+  "scope": "actual Node production build with DB/payment/TMDB credentials disabled"
+}

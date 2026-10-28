@@ -1,0 +1,9 @@
+{
+  "recordedDate": "2026-10-25",
+  "phase": "baseline before audit implementation",
+  "environment": "Node.js 24; local workspace; no live database or payment requests",
+  "typescript": { "command": "npx tsc --noEmit", "exitCode": 0, "log": "audit/baseline-tsc.log" },
+  "build": { "command": "npm run build", "exitCode": 0, "log": "audit/baseline-build.log", "note": "Production build succeeds with existing module directive and bundle warnings." },
+  "lint": { "command": "npm run lint", "exitCode": 1, "errors": 114, "warnings": 9, "total": 123, "fixableErrors": 112, "log": "audit/baseline-lint.log" },
+  "tests": { "configured": false, "executed": false, "note": "No test script, test files, Vitest/tsx, or isolated MongoDB test engine was present." }
+}

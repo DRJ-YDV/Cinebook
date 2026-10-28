@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "read-only actual MongoDB aggregation; not a browser login",
+  "designatedAccountExists": true,
+  "designatedAccountIsAdmin": false,
+  "paidBookings": 2,
+  "paidRevenue": 1517,
+  "customersBooked": 0,
+  "unlinkedPaidBookings": 2,
+  "seatsBooked": 5,
+  "recentRows": 3,
+  "dailyRows": 14
+}
