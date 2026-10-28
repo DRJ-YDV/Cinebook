@@ -82,9 +82,9 @@ export async function withTransaction<T>(work: () => Promise<T>): Promise<T> {
 }
 
 async function loadDriver() {
-  // Indirect specifier: keeps the Node-only driver out of edge/worker bundles.
-  const specifier = "mongo" + "db";
-  return (await import(/* @vite-ignore */ specifier)) as typeof import("mongodb");
+  // Keep the import discoverable so serverless builds include the driver.
+  // This module is server-only and requires a Node runtime.
+  return import("mongodb");
 }
 
 async function getClient(): Promise<MongoClient> {
@@ -113,6 +113,34 @@ async function getClient(): Promise<MongoClient> {
       return client;
     })().catch((cause) => {
       cache.promise = null;
+      // Log only allowlisted identifiers: driver messages can contain credentials
+      // or connection strings. Keep the browser-facing error generic.
+      const name = cause instanceof Error ? cause.name : "UnknownError";
+      const code = cause && typeof cause === "object" && "code" in cause ? cause.code : undefined;
+      console.error("[cinebook:db:connect]", {
+        name: [
+          "MongoServerError",
+          "MongoServerSelectionError",
+          "MongoParseError",
+          "MongoAPIError",
+          "MongoNetworkError",
+          "MongoInvalidArgumentError",
+        ].includes(name)
+          ? name
+          : "ConnectionError",
+        code: [
+          18,
+          8000,
+          "ERR_MODULE_NOT_FOUND",
+          "MODULE_NOT_FOUND",
+          "ENOTFOUND",
+          "ECONNREFUSED",
+          "ETIMEDOUT",
+          "EAI_AGAIN",
+        ].includes(code as never)
+          ? code
+          : "UNCLASSIFIED",
+      });
       throw new DbError(
         "DB_UNAVAILABLE",
         "Could not connect to MongoDB. Check the server connection settings and network access.",
