@@ -422,10 +422,6 @@ The server entry point is `.output/server/index.mjs`. Keep `SESSION_SECRET` cons
 
 The default Nitro target is `node-server`. Changing `NITRO_PRESET` does not establish compatibility with the official MongoDB driver. Follow [DEPLOYMENT.md](DEPLOYMENT.md) for runtime requirements, existing-data migration, and payment prerequisites.
 
-### Lovable synchronization
-
-This project is connected to Lovable. Commits pushed to the connected branch sync back to the editor. Preserve published history: do not force-push, rebase, amend, or squash commits that are already pushed. Keep the connected branch in a working state.
-
 ## Troubleshooting
 
 <details>
@@ -501,8 +497,6 @@ These items describe known gaps, not features already delivered. Historical audi
 5. Update configuration or deployment documentation when behavior changes.
 6. Open a pull request explaining the problem, resulting behavior, and validation performed.
 
-Follow [AGENTS.md](AGENTS.md), preserve the Lovable-connected Git history, and avoid editing `src/routeTree.gen.ts` manually. Review the generated route changes after adding or changing a route.
-
 When reporting a problem, include reproduction steps, expected behavior, actual behavior, and sanitized logs. Exclude credentials, cookies, personal booking data, and payment secrets.
 
 ## Further documentation
@@ -517,6 +511,6 @@ When reporting a problem, include reproduction steps, expected behavior, actual 
 
 ## Acknowledgments and license
 
-CineBook uses TMDB for movie metadata and artwork, Razorpay for test checkout, and the open-source libraries listed in `package.json`. The project also integrates with Lovable's development workflow. Provider integrations do not imply endorsement or affiliation.
+CineBook uses TMDB for movie metadata and artwork, Razorpay for test checkout, and the open-source libraries listed in `package.json`. Provider integrations do not imply endorsement or affiliation.
 
 No project license file is currently included. Public repository access does not itself grant a license to reuse or redistribute the project; obtain the owner's permission and review third-party asset and dependency terms before doing so.
